@@ -17,8 +17,8 @@ const init = () => {
       clientID: "Ov23lip8OJQfB9mDVWVD", // clientID
       clientSecret: "c33f4c5c69337a7811617563173cf0a3f7489d60", // clientSecret
       repo: "docs-comment", // GitHub repo
-      owner: "jm-wxr", // GitHub repository 所有者
-      admin: ["jm-wxr"], // GitHub repo 所有者
+      owner: "focuest", // GitHub repository 所有者
+      admin: ["focuest"], // GitHub repo 所有者
       id: location.pathname, // 可选。默认为 location.href
       labels: ["Gitalk"], // GitHub issue 标签
       proxy: "https://strong-caramel-969805.netlify.app/github_access_token",

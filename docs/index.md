@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: JingMing的主页
+  name: focuest的主页
   text: 个人博客网站
   tagline: 你走的每一步都算数
   image: /image/home/hero-logo.svg
@@ -16,7 +16,7 @@ hero:
       link: /frontend/getstarted/roadmap
     - theme: alt
       text: GitHub
-      link: https://github.com/jm-wxr/a-personal-blog
+      link: https://github.com/focuest/blog
 
 features:
   - icon:

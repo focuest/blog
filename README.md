@@ -6,7 +6,7 @@
 
 - 个人网站（还没有）
 
-- [GitHub Pages](https://jm-wxr.github.io/blog/)
+- [GitHub Pages](https://focuest.github.io/blog/)
 
 ## **环境**
 

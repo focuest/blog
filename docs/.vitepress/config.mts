@@ -5,7 +5,7 @@ import sidebar from "./config/sidebar.mts";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
-  title: "JingMing的主页",
+  title: "focuest的主页",
   description: "A Personal Blog",
   base: "/blog/",
   head: [
@@ -32,7 +32,7 @@ export default defineConfig({
     sidebar,
     outline: {label: "目录", level: [2, 3]},
     socialLinks: [
-      {icon: "github", link: "https://github.com/jm-wxr/a-personal-blog"},
+      {icon: "github", link: "https://github.com/focuest/blog"},
     ],
     logo: {
       src: "/image/home/logo.svg",
@@ -72,11 +72,11 @@ export default defineConfig({
       },
     },
     footer: {
-      message: "随便写点啥",
-      copyright: `版权所有 © 2024-2022-${new Date().getFullYear()} jm-wxr`,
+      message: "玩命更新中...",
+      copyright: `版权所有 © 2024-2022-${new Date().getFullYear()} focuest`,
     },
     editLink: {
-      pattern: "https://github.com/jm-wxr/blog/edit/main/docs/:path",
+      pattern: "https://github.com/focuest/blog/edit/main/docs/:path",
       text: "有错误？帮我修正",
     },
     returnToTopLabel: '返回顶部',
