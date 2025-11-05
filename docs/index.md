@@ -15,6 +15,9 @@ hero:
       text: 前端
       link: /frontend/getstarted/roadmap
     - theme: alt
+      text: java
+      link: /java/getstarted/roadmap
+    - theme: alt
       text: GitHub
       link: https://github.com/focuest/blog
 

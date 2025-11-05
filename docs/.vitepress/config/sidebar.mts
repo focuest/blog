@@ -2,6 +2,7 @@ export default {
   "/misc/": getMisc(),
   "/harmonyos/": getHarmonyOS(),
   "/frontend/": getFrontend(),
+  "/java/": getJava(),
 };
 
 function getHarmonyOS() {
@@ -47,6 +48,27 @@ function getFrontend() {
         { text: "项目实战", link: "project" },
       ],
     },
+  ];
+}
+
+function getJava() {
+  return [
+    {
+      text: "开始",
+      collapsed: true,
+      base: "/java/getstarted/",
+      items: [
+        { text: "学习路线", link: "roadmap" },
+      ],
+    },
+    {
+      text: "JavaWeb",
+      collapsed: true,
+      base: "/java/javaweb/",
+      items: [
+        { text: "学习路线", link: "roadmap" }
+      ],
+    }
   ];
 }
 
