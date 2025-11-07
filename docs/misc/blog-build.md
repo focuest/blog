@@ -4,6 +4,7 @@
 
 ::: info
 [VitePress 官方文档](https://vitepress.dev/zh/guide/getting-started)
+:::
 
 ## GitHub Pages 部署静态网页
 

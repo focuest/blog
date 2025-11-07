@@ -1,8 +1,8 @@
 <!-- Comment.vue -->
 <script lang="ts" setup>
-import {onMounted, ref} from "vue";
-import {inBrowser} from "vitepress";
-import 'gitalk/dist/gitalk.css'
+import { onMounted, ref } from "vue";
+import { inBrowser } from "vitepress";
+import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
 
 const commentRef = ref<HTMLElement | null>(null);
@@ -38,6 +38,8 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@use "sass:color";
+
 $gt-color-main: #3451b2; // gitalk 主题色
 $gt-color-btn: #ffffff; // 按钮文字颜色
 
@@ -46,8 +48,8 @@ $gt-color-btn: #ffffff; // 按钮文字颜色
     color: $gt-color-main;
 
     &:hover {
-      color: lighten($gt-color-main, 20%);
-      border-color: lighten($gt-color-main, 20%);
+      color: color.adjust($gt-color-main, $lightness: 20%);
+      border-color: color.adjust($gt-color-main, $lightness: 20%);
     }
   }
 
@@ -67,8 +69,8 @@ $gt-color-btn: #ffffff; // 按钮文字颜色
 
     &-login {
       &:hover {
-        background-color: lighten($gt-color-main, 20%);
-        border-color: lighten($gt-color-main, 20%);
+        background-color: color.adjust($gt-color-main, $lightness: 20%);
+        border-color: color.adjust($gt-color-main, $lightness: 20%);
       }
     }
 
@@ -77,15 +79,15 @@ $gt-color-btn: #ffffff; // 按钮文字颜色
       color: $gt-color-main;
 
       &:hover {
-        background-color: darken($gt-color-btn, 5%);
-        border-color: lighten($gt-color-main, 20%);
+        background-color: color.adjust($gt-color-btn, $lightness: -5%);
+        border-color: color.adjust($gt-color-main, $lightness: 20%);
       }
     }
 
     &-public {
       &:hover {
-        background-color: lighten($gt-color-main, 20%);
-        border-color: lighten($gt-color-main, 20%);
+        background-color: color.adjust($gt-color-main, $lightness: 20%);
+        border-color: color.adjust($gt-color-main, $lightness: 20%);
       }
     }
   }
