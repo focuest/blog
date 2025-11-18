@@ -4,8 +4,6 @@
 
 ## **链接**
 
-- 个人网站（还没有）
-
 - [GitHub Pages](https://focuest.github.io/blog/)
 
 ## **环境**

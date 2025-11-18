@@ -57,18 +57,24 @@ function getJava() {
       text: "开始",
       collapsed: true,
       base: "/java/getstarted/",
-      items: [
-        { text: "学习路线", link: "roadmap" },
-      ],
+      items: [{ text: "学习路线", link: "roadmap" }],
     },
     {
       text: "JavaWeb",
       collapsed: true,
       base: "/java/javaweb/",
+      items: [{ text: "学习路线", link: "roadmap" }],
+    },
+    {
+      text: "Linux",
+      collapsed: true,
+      base: "/java/linux/",
       items: [
-        { text: "学习路线", link: "roadmap" }
+        { text: "介绍", link: "introduce" },
+        { text: "安装 JDK", link: "install-jdk" },
+        { text: "安装 MySQL", link: "install-mysql" },
       ],
-    }
+    },
   ];
 }
 

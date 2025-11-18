@@ -1,8 +1,10 @@
 {
   "devDependencies": {
     "gitalk": "^1.8.0",
+    "mermaid": "^11.12.1",
     "sass": "^1.77.4",
-    "vitepress": "^1.2.2"
+    "vitepress": "^1.2.2",
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",

@@ -1,9 +1,10 @@
-import { defineConfig, MarkdownRenderer } from "vitepress";
+import { MarkdownRenderer } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 import nav from "./config/nav.mts";
 import sidebar from "./config/sidebar.mts";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   lang: "zh-CN",
   title: "focuest的主页",
   description: "A Personal Blog",
@@ -17,7 +18,7 @@ export default defineConfig({
       (function() {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?7baffa4c26e7a88fa839762fc5bf4706";
-        var s = document.getElementsByTagName("script")[0]; 
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
       `,
@@ -103,6 +104,13 @@ export default defineConfig({
       // 大图预览插件配置
       md.use(MdCustomAttrPlugin, "image", { "data-fancybox": "gallery" });
     },
+  },
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    class: "mermaid my-class", // set additional css classes for parent container
   },
 });
 
