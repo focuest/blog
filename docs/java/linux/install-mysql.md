@@ -1,6 +1,6 @@
 # 安装 MySQL
 
-> 注：以下 Linux 服务器为 CentOS 7 及之后、MySQL 版本为 8.0 及之后
+> 注：以下 Linux 服务器为 CentOS 7+、MySQL 版本为 8.0+
 
 ## 一、流程图
 
@@ -307,20 +307,20 @@ systemctl status mysqld
 使用客户端，使用服务器在初始化序列期间生成的随机密码  `mysql`连接到服务器：`root@localhost`
 
 ```bash
-#root@localhost后面的就是临时密码
+# Yum 安装
 grep 'temporary password' /var/log/mysqld.log
-#如果是二进制包安装
-grep 'temporary password' /usr/local/mysql/data/localhost.log
+# 二进制安装
+grep 'temporary password' /usr/local/mysql/data/*.err
 
 mysql -u root -p
 ```
 
-连接后，分配一个新  `root@localhost`密码。使用强密码。理想情况下，密码应符合您将使用该  `validate_password` （包管理器默认安装此组件）组件定义的密码策略。（请参阅  [第 6 章，_安装 MySQL 密码验证组件_](https://mysql.net.cn/doc/mysql-secure-deployment-guide/8.0/en/secure-deployment-password-validation.html)。）
-
-```bash
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '*password*';
+```sql
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 mysql> exit
 ```
+
+>💡 提示：如果启用了 validate_password 插件（默认开启），密码必须满足强度策略（大写、小写、数字、特殊字符、长度 ≥ 8）。
 
 ## 六、测试 MySQL 服务器
 
@@ -340,12 +340,14 @@ mysqladmin -u root -p version
 
 需要登录到 MySQL 服务器，执行下面的命令：
 
-```bash
--- 允许 'username' 从任何 IP (%) 连接，密码为 'password'
--- 授予所需权限（例如所有数据库的全部权限）
-GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password';
+```sql
+-- 1. 创建用户
+CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 
--- 刷新权限
+-- 2. 授权
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
+
+-- 3.刷新权限
 FLUSH PRIVILEGES;
 ```
 

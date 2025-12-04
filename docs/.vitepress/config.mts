@@ -6,7 +6,7 @@ import sidebar from "./config/sidebar.mts";
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   lang: "zh-CN",
-  title: "focuest的主页",
+  title: "LumenL1u的主页",
   description: "A Personal Blog",
   base: "/blog/",
   head: [

@@ -34,6 +34,7 @@ date: 2025-11-05
 - JSP 的本质就是一个 Servlet。
 - JSP 的脚本元素、指令、动作。
 - **JSTL 标签库标签库** 和 **EL 表达式**：用于在页面上更优雅地展示地展示数据，避免在 JSP 中写 Java 代码。
+- 已淘汰，了解即可。
 
 ### 5. MVC设计模式
 
@@ -42,31 +43,66 @@ date: 2025-11-05
 
 ## 二、核心技术
 
-MySQL
+### MySQL
 
-MyBatis
+- 八股四大件之一
+- 重点：SQL 语句，索引，事务，锁，InnoDB存储引擎，日志，主从复制，分库分表、读写分离，备份与恢复，性能优化。
 
-HikariCP
+### JDBC
 
-Maven
+- 不怎么重要，但是要了解其底层原理
 
-Spring Framework
+### HikariCP
 
-Spring Boot
+### Maven
+
+### MyBatis
+
+### Spring
+
+### Spring MVC
+
+### Spring Framework
+
+### Spring Boot
+
+- 最主流的框架
 
 ## 三、拓展技术
 
-RESTful API
+### RESTful API
 
-Swagger/OpenAPI
+### Swagger/OpenAPI
 
-Spring Security
+### Spring Security
 
-Hibernate Validator
+### Hibernate Validator
 
-Junit+Mockito
+### Junit+Mockito
 
-Linux+Docker
+### Git
+
+- 学完后一定要动手实践！！！
+
+### Linux+Docker
+
+- 也是要动手实践
+
+### Redis
+
+- 八股四大件之一
+
+### RocketMQ
+
+- 除八股四大件外的最重要的点，和Kafka之间挑一个学
+
+### JVM原理
+
+- 八股四大件之一
+
+## JUC
+
+- 八股四大件之一
 
 ## 四、AI技术
 
@@ -82,19 +118,33 @@ AI智能体开发
 
 ## 可选
 
-Redis
+### Spring Cloud
 
-RabbitMQ
+- 分布式、微服务框架
+
+### Spring高级
+
+- Spring框架源码解析
+
+### RabbitMQ
+
+- 消息队列
+
+### Dubbo
+
+- 流行的RPC框架
+
+### 操作系统
+
+### 计算机网络
+
+- 《网络是怎样连接的》————户根勤
+
+### 设计模式
 
 Elasticsearch
 
-Spring框架源码解析
-
-JVM原理
-
 DevOps
-
-Spring Cloud+分布式+微服务
 
 算法与数据结构
 
@@ -102,6 +152,13 @@ Java NIO
 
 前端技术
 
-设计模式
-
 极限编程
+
+ZooKeeper
+
+Netty
+
+ShardingSphere
+
+参考:
+https://www.bilibili.com/video/BV1EQE4zMEpP

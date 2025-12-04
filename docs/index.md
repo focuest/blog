@@ -3,20 +3,20 @@
 layout: home
 
 hero:
-  name: focuest的主页
+  name: LumenL1u的主页
   text: 个人博客网站
   tagline: 你走的每一步都算数
   image: /image/home/hero-logo.svg
   actions:
     - theme: brand
-      text: HarmonyOS
-      link: /harmonyos/getstarted/introduce
+      text: java
+      link: /java/getstarted/roadmap
     - theme: alt
       text: 前端
       link: /frontend/getstarted/roadmap
     - theme: alt
-      text: java
-      link: /java/getstarted/roadmap
+      text: HarmonyOS
+      link: /harmonyos/getstarted/introduce
     - theme: alt
       text: GitHub
       link: https://github.com/focuest/blog
